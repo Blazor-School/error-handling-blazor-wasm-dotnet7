@@ -1,7 +1,7 @@
 ﻿@inject HttpClient HttpClient
 
-<button class="btn btn-primary" type="button" @onclick='TriggerHttpClientErrorAsync'>Trigger HttpClient error</button>
-<button class="btn btn-primary" type="button" @onclick="TriggerClientSideError">Trigger client side error</button>
+<button type="button" @onclick='TriggerHttpClientErrorAsync'>Trigger HttpClient error</button>
+<button type="button" @onclick="TriggerClientSideError">Trigger client side error</button>
 
 @code {
     public async Task TriggerHttpClientErrorAsync() => await HttpClient.GetAsync("https://blazorschool.com");

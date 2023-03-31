@@ -6,7 +6,7 @@
 @implements IDisposable
 
 <h3>HandlingHttpErrorsByHttpClientWrapper</h3>
-<button class="btn btn-primary" @onclick="TriggerHttpErrorAsync">Trigger HTTP Error</button>
+<button @onclick="TriggerHttpErrorAsync">Trigger HTTP Error</button>
 
 @foreach (var exception in ExceptionRecorderService.Exceptions)
 {

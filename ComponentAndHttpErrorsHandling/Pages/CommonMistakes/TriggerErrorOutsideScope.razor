@@ -4,8 +4,8 @@
 <h3>TriggerErrorOutsideScope</h3>
 <ErrorBoundary>
     <ChildContent>
-        <button class="btn btn-primary" type="button" @onclick='TriggerHttpClientErrorAsync'>Trigger HttpClient error</button>
-        <button class="btn btn-primary" type="button" @onclick="TriggerClientSideError">Trigger client side error</button>
+        <button type="button" @onclick='TriggerHttpClientErrorAsync'>Trigger HttpClient error</button>
+        <button type="button" @onclick="TriggerClientSideError">Trigger client side error</button>
     </ChildContent>
     <ErrorContent>An error has occurred.</ErrorContent>
 </ErrorBoundary>

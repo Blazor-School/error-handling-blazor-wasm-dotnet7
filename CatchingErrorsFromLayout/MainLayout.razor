@@ -7,7 +7,7 @@
                 @Body
             </ChildContent>
             <ErrorContent>
-                <div>Hello Blazor School! This is a custom error message. <button class="btn btn-link" @onclick="_ => MainErrorBoundary.Recover()">Resolve Error</button></div>
+                <div>Hello Blazor School! This is a custom error message. <button @onclick="_ => MainErrorBoundary.Recover()">Resolve Error</button></div>
             </ErrorContent>
         </ErrorBoundary>
     </CascadingValue>
